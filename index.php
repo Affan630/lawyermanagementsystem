@@ -50,10 +50,9 @@ include('header.php')
 			<!-- slider -->
 	<!-- <br> -->
 	<!--cards start-->
-	<h1  style="text-align:center;">BEST LAWYERS</style></h1>
-
-	<div class="card-deck">
-  <div class="card">
+	<div style="background-color: #100f14;"><h1  style="text-align:center; color:#af9473">BEST LAWYERS</style></h1></div>
+<div class="card-deck" style="background-color: #100f14;">
+  <div class="card" style="background-color:#615f65;">
     <img class="baner.jpg" src="images/upload/20231028142702_2.jpg" alt="baner.jpg">
     <div class="card-body">
       <h4 class="card-title" style="font-weight:bold;">Basit Khan</h4>
@@ -61,7 +60,7 @@ include('header.php')
       <p class="card-text"><p class="card-text" style="font-weight: bold">Type of case handles:</p>Civil matter,Contract law,Construction law,Information Technology,Family Law,Investment Matter,Property Law</p>
     </div>
   </div>
-  <div class="card">
+  <div class="card" style="background-color:#615f65;">
     <img class="card-img-top" src="images/upload/20231028143018_3.jpg" alt="Card image cap">
     <div class="card-body">
 	 <h4 class="card-title" style="font-weight:bold;">Aqsa Jamil</h4>
@@ -69,14 +68,14 @@ include('header.php')
       <p class="card-text" style="font-weight: bold">Type of case handles:</p><p class="card-text"> Criminal matter,Civil matter,Writ Jurisdiction,Company law,Contract law,Commercial matter,Construction law,Information Technology,Family Law,Religious Matter,Investment Matter,Labour Law,Property Law,Taxation Matter,Others,</p>
     </div>
   </div>
-  <div class="card">
+  <div class="card" style="background-color:#615f65;">
     <img class="card-img-top" src="images/upload/20231028142837_1.jpg" alt="Card image cap">
     <div class="card-body">
-	 <h4 class="card-title" style="font-weight:bold;">Basit Khan</h4>
-      <h5 class="card-text">Investment Law</h5>
-      <p class="card-text"><p class="card-text" style="font-weight: bold">Type of case handles:</p>Criminal matter,Civil matter,Writ Jurisdiction,Company law,Contract law,Commercial matter,Construction law,Information Technology,Family Law,Religious Matter,Investment Matter,Labour Law,Property Law,Taxation Matter,Others,</p>
+	    <h4 class="card-title" style="font-weight:bold;">Basit Khan</h4>
+         <h5 class="card-text">Investment Law</h5>
+         <p class="card-text"><p class="card-text" style="font-weight: bold">Type of case handles:</p>Criminal matter,Civil matter,Writ Jurisdiction,Company law,Contract law,Commercial matter,Construction law,Information Technology,Family Law,Religious Matter,Investment Matter,Labour Law,Property Law,Taxation Matter,Others,</p>
+      </div>
     </div>
-  </div>
 </div>
 
 <!---cards end-->

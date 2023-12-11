@@ -1,3 +1,17 @@
+<style>
+	nav.navbar.navbar-dark.bg-success{
+    background-color: #100f14 !important ;
+}
+.navbar-dark .navbar-brand {
+    color: #af9473;
+}
+.cus-a {
+    color: #af9473 !important;
+}
+.dropdown-item{
+	color: #af9473 !important;
+}
+</style>
 <nav class="navbar navbar-dark bg-success">
 			<a class="navbar-brand" href="index.php">
 				<img src="images/logo.png"
@@ -32,7 +46,7 @@
 								data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 								Register
 							 </a>
-							    <div class="dropdown-menu bg-success" aria-labelledby="navbarDropdown">
+							    <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color:#100f14;">
 								    <a class="dropdown-item" href="lawyer_register.php">Register as a
 									lawyer</a><!--redirect lawyer register page-->
 								    <a class="dropdown-item" href="user_register.php">Register as a

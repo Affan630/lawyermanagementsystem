@@ -22,7 +22,7 @@ body {
     margin: 10px 10px;
 }
 .cus-a{
-    color: white !important;
+    color: #af9473 ;
 }
 .banner{
     background-image: url('../images/baner.jpg');
@@ -74,7 +74,7 @@ body {
 footer{
     margin-top: auto;
     background-color: black;
-    color: white;
+    color: #af9473 !important;
 }
 footer h5{
     text-align: center;
