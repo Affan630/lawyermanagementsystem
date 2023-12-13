@@ -5,7 +5,7 @@ function connect($setup = FALSE){
 	$servername = "localhost";
 	$username = "root";
 	$password = "";
-	$database = "lawyermanagement";
+	$database = "lawyer_db";
 
 	// Create connection
 	if($setup)

@@ -14,7 +14,7 @@
 				showConfirmButton: true,
 			},
 			window.load = function(){
-				window.location='http://localhost/lawyermanagementsystem/login.php';
+				window.location='login.php';
 			});
 		}
 		function MyCheckFn(){
@@ -26,7 +26,7 @@
 				showConfirmButton: true,
 			},
 			window.load = function(){
-				window.location='http://localhost/lawyermanagementsystem/login.php';
+				window.location='login.php';
 			});
 		}
 	</script>
