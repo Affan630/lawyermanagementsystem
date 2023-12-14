@@ -11,8 +11,11 @@ body {
     display: flex !important;
     min-height: 100% !important;
     flex-direction: column;
+    background-color:#040000 !important ;
 }
-
+.bg-color{
+    background-color: #040000 !important;
+}
 .customnav{
     background-color: #040000;
     height: 100px;
@@ -25,8 +28,9 @@ body {
     color: #af9473 ;
 }
 .banner{
-    background-image: url('../images/baner.jpg');
-    height: 400px;
+    background-image: url('../images/Banner02.jpg');
+    height: 100%;
+    width: 100%;
     background-size: cover;
 }
 
@@ -58,7 +62,9 @@ body {
     margin: 30px 0px;
     
 }
-
+.card{
+    background-color: #615f65;
+}
 .cusimg{
     height: 185px;
 }
@@ -116,4 +122,13 @@ footer h5{
 }
 .aboutusform{
     margin: 30px;
+}
+.bh1{
+    margin-bottom: 0.5rem;
+}
+.bp1{
+    margin-bottom: 20rem;
+}
+.adsb {
+    background-color: #1c1b1b !important;
 }

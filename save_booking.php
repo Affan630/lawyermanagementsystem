@@ -13,7 +13,7 @@
 				showConfirmButton: true,
 			},
 			window.load = function(){
-				window.location='http://localhost/lawyermanagementsystem/user_dashboard.php';
+				window.location='user_dashboard.php';
 			});
 		}
 	</script>

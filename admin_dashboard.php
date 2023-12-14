@@ -190,7 +190,7 @@
 			
 		</head>
 		<body>
-			<header class="customnav bg-success">
+			<!-- <header class="customnav bg-success">
 				<div class="container">
 					<div class="row">
 						<div class="col-md-12">
@@ -213,18 +213,21 @@
 						</div>
 					</div>
 				</div>
-			</header>
+			</header> -->
+			<?php
+		include('header.php')
+		?>
 			<body>
 				
 				<div class="d-flex" id="wrapper">
 					
 					<!-- Sidebar -->
-					<div class="bg-light border-right" id="sidebar-wrapper">
-						<div class="sidebar-heading">Admin Panel</div>
-						<div class="list-group list-group-flush">
-							<a href="admin_dashboard.php" class="list-group-item list-group-item-action bg-light">Dashboard</a><!--this page-->
-							<a href="admin_lawyer.php" class="list-group-item list-group-item-action bg-light">See lawyers</a><!--admin_lawyer page-->
-							<a href="admin_user.php" class="list-group-item list-group-item-action bg-light">See Users</a><!--admin_user page-->
+					<div class="adsb" id="sidebar-wrapper" style="background-color: #1c1b1b !important;">
+						<div class="sidebar-heading" style="color:#af9473;">Admin Panel</div>
+						<div class="list-group list-group-flush" style="color:#af9473;">
+							<a href="admin_dashboard.php" class="list-group-item list-group-item-action bg-light" style="background-color: #8f8f8f !important; ">Dashboard</a><!--this page-->
+							<a href="admin_lawyer.php" class="list-group-item list-group-item-action bg-light" style="background-color: #8f8f8f !important; ">See lawyers</a><!--admin_lawyer page-->
+							<a href="admin_user.php" class="list-group-item list-group-item-action bg-light" style="background-color: #8f8f8f !important; ">See Users</a><!--admin_user page-->
 						</div>
 					</div>
 					<!-- /#sidebar-wrapper -->
@@ -283,15 +286,10 @@
 				
 				
 			</body>
-			<footer class ="bg-success">
-				<div class="container">
-					<div class="row">
-						<div class="col">
-							<h5>All rights reserved. 2023</h5>
-						</div>
-					</div>
-				</div>
-			</footer>
+			
+			<?php
+			include('footer.php')
+			?>
 			<!-- Optional JavaScript -->
 			<!-- jQuery -->
 			

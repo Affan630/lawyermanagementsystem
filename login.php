@@ -22,51 +22,9 @@
 	</head>
 	<body>
 		<!-- nav-bar starts	 -->
-		<nav class="navbar navbar-dark bg-success">
-			<a class="navbar-brand" href="index.php">
-				<img src="images/logo.png"
-					width="70" height="70" alt="logo">
-				Law Frim
-			</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-list"
-				aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbar-list">
-				<ul class="navbar-nav">
-				    <li class="active">
-						<a class="nav-link cus-a" href="index.php">Home <span class="sr-only">(current)</span></a>
-						</li>
-						<li class="">
-							<a class="nav-link cus-a" href="lawyers.php">Lawyers</a><!--lawyers.html page-->
-						</li>
-						<?php if(isset($_SESSION['login']) && $_SESSION['login'] == TRUE){ ?>
-						<li class="">
-							<a class="nav-link cus-a" href="user_dashboard.php">Dashboard</a>
-						</li>
-						<li class="">
-							<a class="nav-link cus-a" href="logout.php">Logout</a>
-						</li>
-					<?php }else{ ?>
-						    <li class="">
-							 <a class="nav-link cus-a" href="login.php">Login</a>
-						    </li>
-						    <li class="nav-item dropdown">
-							 <a class="nav-link dropdown-toggle cus-a" href="#" id="navbarDropdown" role="button"
-								data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-								Register
-							 </a>
-							    <div class="dropdown-menu bg-success" aria-labelledby="navbarDropdown">
-								    <a class="dropdown-item" href="lawyer_register.php">Register as a
-									lawyer</a><!--redirect lawyer register page-->
-								    <a class="dropdown-item" href="user_register.php">Register as a
-									user</a><!--redirect user register page-->
-							    </div>
-						</li>
-					<?php }?>
-				</ul>
-			</div>
-		</nav>
+	<?php
+	include('header.php')
+	?>
 		<!-- nav-bar ends -->
 		<section class="registerform">
 			<?php
@@ -92,11 +50,11 @@
 			}?>
 			<div class="container">
 				<div class="row">
-				<div class="col-md-6">
+				<div class="col-md-6" style="color:#af9473">
     <h2>Welcome, Legal Explorer! <i class="fas fa-gavel"></i></h2><hr/>
     <h4>Login to Discover Your Ideal Lawyer or Make a User Request <i class="fas fa-rocket"></i></h4>
 </div>
-					<div class="col-md-6">
+					<div class="col-md-6" style="color:#af9473">
 						<form action="db_con/db_login.php" method="POST"  id="validateForm">
 
 							<div class="form-group">
@@ -115,17 +73,11 @@
 				</div>
 			</div>
 		</section>
-		<footer class ="bg-success">
-			<div class="container ">
-				<div class="row">
-					<div class="col">
-						<h5>All rights reserved. 2023
-							
-						</h5>
-					</div>
-				</div>
-			</div>
-		</footer>
+		<!-- footer starts -->
+		<?php
+		include('footer.php')
+		?>
+		<!-- footer Ends -->
 		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
 		<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>

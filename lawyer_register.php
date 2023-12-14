@@ -21,60 +21,18 @@
 	</head>
 	<body>
 		<!-- nav-bar starts	 -->
-		<nav class="navbar navbar-dark bg-success">
-			<a class="navbar-brand" href="index.php">
-				<img src="images/logo.png"
-					width="70" height="70" alt="logo">
-				Law Frim
-			</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-list"
-				aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbar-list">
-				<ul class="navbar-nav">
-				    <li class="active">
-						<a class="nav-link cus-a" href="index.php">Home <span class="sr-only">(current)</span></a>
-						</li>
-						<li class="">
-							<a class="nav-link cus-a" href="lawyers.php">Lawyers</a><!--lawyers.html page-->
-						</li>
-						<?php if(isset($_SESSION['login']) && $_SESSION['login'] == TRUE){ ?>
-						<li class="">
-							<a class="nav-link cus-a" href="user_dashboard.php">Dashboard</a>
-						</li>
-						<li class="">
-							<a class="nav-link cus-a" href="logout.php">Logout</a>
-						</li>
-					<?php }else{ ?>
-						    <li class="">
-							 <a class="nav-link cus-a" href="login.php">Login</a>
-						    </li>
-						    <li class="nav-item dropdown">
-							 <a class="nav-link dropdown-toggle cus-a" href="#" id="navbarDropdown" role="button"
-								data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-								Register
-							 </a>
-							    <div class="dropdown-menu bg-success" aria-labelledby="navbarDropdown">
-								    <a class="dropdown-item" href="lawyer_register.php">Register as a
-									lawyer</a><!--redirect lawyer register page-->
-								    <a class="dropdown-item" href="user_register.php">Register as a
-									user</a><!--redirect user register page-->
-							    </div>
-						</li>
-					<?php }?>
-				</ul>
-			</div>
-		</nav>
+		<?php
+		include('header.php')
+		?>
 		<!-- nav-bar ends -->
 		<section class="registerform">
 			<div class="container">
 				<div class="row">
-				<div class="col-md-6">
+				<div class="col-md-6" style="color:#af9473">
 				<h2>Welcome, Lawyer! <i class="fas fa-gavel"></i></h2><hr/>
     <h4>Ready to Join the Legal Revolution? <i class="fas fa-rocket"></i></h4>
 </div>
-					<div class="col-md-6">
+					<div class="col-md-6" style="color:#af9473">
 						<form  action="lawyer_registation.php"  method="post" enctype="multipart/form-data"  id="validateForm">
 							<div class="form-row">
 								<div class="form-group col-md-6">
@@ -310,51 +268,9 @@
 			</div>
 		</section>
 		<!-- FOOTER STARTS  -->
-	<footer style="background-color: #28a745;">
-		<div class="container p-4">
-			<div class="row">
-				<div class="col-lg-6 col-md-12 mb-4">
-					<h5 class="mb-3" style="letter-spacing: 2px; color: #ffffff;">About Us</h5>
-					<p>Welcome to our Lawyer Management System, where we put you in control. Our platform is all about
-						making the legal process as effortless as possible. We've created a space where you, the user,
-						can browse, choose, and book appointments with lawyers who best suit your unique needs. It's
-						your legal journey, your way, and we're here to make it seamless. Trust us to connect you with
-						the right legal expertise when you need it most.</p>
-				</div>
-				<div class="col-lg-3 col-md-6 mb-4">
-					<h5 class="mb-3" style="letter-spacing: 2px; color: #ffffff;">Get in Touch</h5>
-					<ul class="list-unstyled mb-0">
-						<div class="contact-details">
-							<p><i class="fas fa-map-marker-alt"></i> Address: D-18, Block-4</p>
-							<p><i class="fas fa-phone"></i> Phone: +9234-332-08987</p>
-							<p><i class="fas fa-envelope"></i> Email: lawyers@contact.com</p>
-							<p><i class="fas fa-headset"></i> Customer Support: 021-58585-3</p>
-							<p><i class="far fa-clock"></i> Office Hours: 9am-4pm</p>
-						</div>
-					</ul>
-				</div>
-				<div class="col-lg-3 col-md-6 mb-4">
-					<h5 class="mb-1" style="letter-spacing: 2px; color: #ffffff;">opening hours</h5>
-					<table class="table" style="color: #ffffff; border-color: #666;">
-						<tbody>
-							<tr>
-								<td>Mon - Fri:</td>
-								<td>9am - 4pm</td>
-							</tr>
-							<tr>
-								<td>Sat - Sun:</td>
-								<td>9am - 1pm</td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
-			</div>
-		</div>
-		<div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-			© 2020 Copyright:
-		</div>
-		<!-- Copyright -->
-	</footer>
+		<?php
+		include('footer.php')
+		?>
 	<!-- FOOTER ENDS  -->
 
 
