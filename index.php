@@ -30,7 +30,7 @@ include('header.php')
 <!-- nav-bar ends -->
 		<!-- slider -->
 	 <section>
-		<!-- <div class="banner">
+		<div class="banner">
 			<div class="container">
 				<div class="row">
 					<div class="col-md">
@@ -38,15 +38,14 @@ include('header.php')
 							<h1>Discover Your Ideal Lawyer Here!</h1>
 							<p>Your Legal Journey Starts Now</p>
 							<br>
-
 							<a href="lawyers.php" class="btn btn-outline-success">Find Lawyers</a>
 						</div>
 
 					</div>
 				</div>
 			</div>
-		</div> -->
-<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+		</div>
+<!-- <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
    <div class="carousel-inner">
      <div class="carousel-item active">
         <img class="d-block w-100" src="images/baner.jpg" alt="First slide">
@@ -56,7 +55,7 @@ include('header.php')
 		<a href="lawyers.php" class="btn btn-outline-success">Find Lawyers</a>
 	</div>
     </div>
-</div>
+</div> -->
 	</section>
 			<!-- slider -->
 	<!-- <br> -->

@@ -17,28 +17,26 @@
 	</head>
 	<body>
 		<!-- nav-bar starts	 -->
-		<?php
-		include('header.php')
-		?>
+		<?php include "header.php"; ?>
 		<!-- nav-bar ends -->
-<body>
+           
+		<div style = "text-align:center";>
 		    <div class="" id="wrapper">
 				<section class="bg-color" style="background-color:#040000;">
 				
 					<div class="container">
 					<br/>
-					<a href="searchLawyer.php"type="submit" class="btn btn-md btn-primary "><i class="fa fa-search"></i>&nbsp; Find Lawyer</a>
+					<div class="d-grid"><a href="searchLawyer.php"type="submit" class="btn btn-md btn-block butmain"><i class="fa fa-search"></i>&nbsp; Find Lawyer</a></div>
 					<hr/>
 						<div class="row " >
 						
 							<?php
-								include_once 'db_con/dbCon.php';
-								$conn = connect();
-								
-								$result = mysqli_query($conn,"SELECT * FROM user,lawyer WHERE user.u_id=lawyer.lawyer_id AND user.status='Active'");
-								
-								while($row = mysqli_fetch_array($result)) {
-								?>
+       include_once "db_con/dbCon.php";
+       $conn = connect();
+
+       $result = mysqli_query($conn, "SELECT * FROM user,lawyer WHERE user.u_id=lawyer.lawyer_id AND user.status='Active'");
+
+       while ($row = mysqli_fetch_array($result)) { ?>
 								<div class="col-md-4">
 									<div class="card" style="width: 18rem;">
 										<img src="images/upload/<?php echo $row["image"]; ?>" class="card-img-top cusimg img-fluid" alt="img">
@@ -47,24 +45,22 @@
 											<h6 class="card-title"><?php echo $row["speciality"]; ?></h6> <!--lawyers practice speciality dynamic-->
 											<h6 class="card-title"><span><?php echo $row["practise_Length"]; ?></span></h6> <!--lawyers practice time dynamic-->
 											
-											<a class="btn btn-sm btn-info" href="single_lawyer.php?u_id=<?php echo $row["u_id"]; ?>"><i class="fa fa-street-view"></i>&nbsp; View Full Profile</a>
+											<a class="btn btn-sm butcol" href="single_lawyer.php?u_id=<?php echo $row["u_id"]; ?>"><i class="fa fa-street-view"></i>&nbsp; View Full Profile</a>
 										</div>
 									</div>
 								</div>
 								<br>
 								<div></div>
-								<?php
-								}
-							?>
+								<?php }
+       ?>
 						</div>
 					</div>
 				</section>
 			</div>
+		</div>
 	</body>
 		<!-- FOOTER STARTS  -->
-		<?php
-		include('footer.php');
-		?>
+		<?php include "footer.php"; ?>
 	<!-- FOOTER ENDS  -->
 		<!-- Optional JavaScript -->
 		<!-- jQuery -->

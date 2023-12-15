@@ -26,7 +26,7 @@
 		<body>
 			<!-- nav-bar starts	 -->
 		    <?php
-			include('header.php')
+			include('user-header.php')
 			?>
 		    <!-- nav-bar ends -->
 			<body>

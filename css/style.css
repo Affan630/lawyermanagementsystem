@@ -28,7 +28,7 @@ body {
     color: #af9473 ;
 }
 .banner{
-    background-image: url('../images/Banner02.jpg');
+    background-image: url('../images/Banner.jpg');
     height: 100%;
     width: 100%;
     background-size: cover;
@@ -131,4 +131,16 @@ footer h5{
 }
 .adsb {
     background-color: #1c1b1b !important;
+}
+.butcol{
+    color: #040000;
+    background-color: #af9473;
+    border-color: #af9473;
+}
+.butmain{
+    color: #af9473;
+    border-color: #af9473;
+}
+.butmain:hover{
+    color: #af9473 !important;
 }

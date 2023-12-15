@@ -26,7 +26,7 @@
 		<body>
 			<!-- nav-bar starts -->
 		<?php
-		include('header.php')
+		include('user-header.php')
 		?>
 			<!-- nav-bar Ends -->
 			<body>
@@ -34,14 +34,14 @@
 				<div class="d-flex" id="wrapper">
 					
 					<!-- Sidebar -->
-					<div class="bg-light border-right" id="sidebar-wrapper">
-						<div class="sidebar-heading">My Profile</div>
+					<div class="asbd" id="sidebar-wrapper" style="background-color: #1c1b1b !important;">
+						<div class="sidebar-heading" style="color:#af9473;">My Profile</div>
 						<div class="list-group list-group-flush">
-							<a href="user_dashboard.php" class="list-group-item list-group-item-action bg-light">Dashboard</a><!--this page-->
-							<a href="lawyerfind.php" class="list-group-item list-group-item-action bg-light">Lawyers</a><!--this page-->
-							<a href="user_profile.php" class="list-group-item list-group-item-action bg-light">Edit Profile</a><!--user_profile page-->
-							<a href="user_booking.php" class="list-group-item list-group-item-action bg-light">My booking requests</a><!--booking page-->
-							<a href="update_password.php" class="list-group-item list-group-item-action bg-light">Update Password</a><!--booking page-->
+							<a href="user_dashboard.php" class="list-group-item list-group-item-action bg-light" style="background-color: #8f8f8f !important;">Dashboard</a><!--this page-->
+							<a href="lawyerfind.php" class="list-group-item list-group-item-action bg-light" style="background-color: #8f8f8f !important;">Lawyers</a><!--this page-->
+							<a href="user_profile.php" class="list-group-item list-group-item-action bg-light" style="background-color: #8f8f8f !important;">Edit Profile</a><!--user_profile page-->
+							<a href="user_booking.php" class="list-group-item list-group-item-action bg-light" style="background-color: #8f8f8f !important;">My booking requests</a><!--booking page-->
+							<a href="update_password.php" class="list-group-item list-group-item-action bg-light" style="background-color: #8f8f8f !important;">Update Password</a><!--booking page-->
 						</div>
 					</div>
 					<!-- /#sidebar-wrapper -->
@@ -58,7 +58,7 @@
 						
 						while($row = mysqli_fetch_array($result)) {
 						?>
-						<div class="col-md-3">
+						<div class="col-md-3" style="color:#af9473;">
 							<div class="sideprofile">
 								<img src="images/upload/<?php echo $row["image"]; ?>" class="img-fluid profile_img" alt="profile picture">
 								<h2><?php echo $row["first_Name"]; ?> <?php echo $row["last_Name"]; ?></h2>
@@ -66,7 +66,7 @@
 								<hr>
 							</div>
 						</div>
-						<div class="col-md-9">
+						<div class="col-md-9" style="color:#af9473;">
 							<div class="mainprofile">
 								<div class="infogroup row">
 									<div class="col-md-4">

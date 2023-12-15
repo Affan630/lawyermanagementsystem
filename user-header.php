@@ -13,7 +13,7 @@
 }
 </style>
 <nav class="navbar navbar-dark bg-success">
-			<a class="navbar-brand" href="index.php">
+			<a class="navbar-brand" href="#">
 				<img src="images/logo.png"
 					width="70" height="70" alt="logo">
 				Law Frim
@@ -24,15 +24,27 @@
 			</button>
 			<div class="collapse navbar-collapse" id="navbar-list">
 				<ul class="navbar-nav">
-				    <li class="active">
+				    <!-- <li class="active">
 						<a class="nav-link cus-a" href="index.php">Home <span class="sr-only">(current)</span></a>
-						</li>
-						<li class="">
-							<a class="nav-link cus-a" href="lawyers.php">Lawyers</a><!--lawyers.html page-->
-						</li>
+						</li> -->
+						<!-- <li class="">
+							<a class="nav-link cus-a" href="lawyers.php">Lawyers</a>
+						</li> -->
 						<?php if(isset($_SESSION['login']) && $_SESSION['login'] == TRUE){ ?>
 						<li class="">
-							<a class="nav-link cus-a" href="admin_dashboard.php">Dashboard</a>
+							<a class="nav-link cus-a" href="user_dashboard.php">Dashboard</a>
+						</li>
+                        <li class="">
+							<a class="nav-link cus-a" href="lawyerfind.php">Lawyers</a>
+						</li>
+						<li class="">
+							<a class="nav-link cus-a" href="user_profile.php">Edit Profile</a>
+						</li>
+						<li class="">
+							<a class="nav-link cus-a" href="user_booking.php">Booking Request</a>
+						</li>
+						<li class="">
+							<a class="nav-link cus-a" href="update_password.php">Update Password</a>
 						</li>
 						<li class="">
 							<a class="nav-link cus-a" href="logout.php">Logout</a>

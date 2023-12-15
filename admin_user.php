@@ -69,7 +69,7 @@
 									
 									<div class="widget-header">
 										<i class="icon-th-list"></i>
-										<h3>Registered Users</h3>
+										<h3 style="color:#af9473;">Registered Users</h3>
 									</div> <!-- /widget-header -->
 									
 									<div class="widget-content">
