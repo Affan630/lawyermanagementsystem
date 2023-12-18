@@ -26,7 +26,7 @@
 				
 					<div class="container">
 					<br/>
-					<div class="d-grid"><a href="searchLawyer.php"type="submit" class="btn btn-md btn-block butmain"><i class="fa fa-search"></i>&nbsp; Find Lawyer</a></div>
+					<div class="d-grid" hh4><a href="searchLawyer.php"type="submit" class="btn btn-md btn-block butmain"><i class="fa fa-search"></i>&nbsp; Find Lawyer</a></div>
 					<hr/>
 						<div class="row " >
 						
@@ -37,7 +37,7 @@
        $result = mysqli_query($conn, "SELECT * FROM user,lawyer WHERE user.u_id=lawyer.lawyer_id AND user.status='Active'");
 
        while ($row = mysqli_fetch_array($result)) { ?>
-								<div class="col-md-4">
+								<div class="col-md-4 c3">
 									<div class="card" style="width: 18rem;">
 										<img src="images/upload/<?php echo $row["image"]; ?>" class="card-img-top cusimg img-fluid" alt="img">
 										<div class="card-body">

@@ -239,7 +239,7 @@
 									
 									<div class="widget-header">
 										<?php if(isset($_GET['done'])){
-											echo "<div class='alert alert-danger alert-dismissible fade show'>
+											echo "<div class='alert alert-danger alert-dismissible fade show' style='color: #1e7e34 !important; background-color: #212529 !important; border-color: #212529 !important;'>
 											<button type='button' class='close' data-dismiss='alert' aria-label='Close'><span aria-hidden='true'>&times;</span></button>
 											<strong>Welcome!</strong> You are login as Admin.
 											</div>";

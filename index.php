@@ -60,7 +60,7 @@ include('header.php')
 			<!-- slider -->
 	<!-- <br> -->
 	<!--cards start-->
-	<div style="background-color: #100f14;"><h1  style="text-align:center; color:#af9473">BEST LAWYERS</style></h1></div>
+	<div class="btt1"><div style="background-color: #100f14;"><h1  style="text-align:center; color:#af9473">BEST LAWYERS</style></h1></div></div>
 <div class="card-deck" style="background-color: #100f14;">
   <div class="card" style="background-color:#615f65;">
     <img class="baner.jpg" src="images/upload/20231028142702_2.jpg" alt="baner.jpg">

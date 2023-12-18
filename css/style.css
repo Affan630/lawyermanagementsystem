@@ -143,4 +143,26 @@ footer h5{
 }
 .butmain:hover{
     color: #af9473 !important;
+}.btt1{
+    padding-top: 1.5rem;
+    padding-bottom: 1.2rem;
+    background-color: #131214;
 }
+.c3{
+    margin-top: 4rem;
+    bottom: 3rem;
+}
+.hh4{
+    padding-top: 1.5rem;
+}
+.btn-primary{
+    color: #fff;
+    background-color:#af9473 !important;
+    border-color:#af9473 !important;
+}
+.ad{
+    color: #1e7e34 !important;
+    background-color: #212529 !important;
+    border-color: #212529 !important;
+}
+  

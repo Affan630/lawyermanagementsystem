@@ -24,11 +24,11 @@
 				<div class="container">
 					<form method="post" novalidate="novalidate" >
 						
-						<div class="row">
+						<div class="row" style="color:#af9473">
 							
 							<div class="col-md-4">
 								<div class="form-group">
-									<label for="experience" style="color:#fff !important;">Experience</label>
+									<label for="experience">Experience</label>
 									<select name="experience" class="form-control">
 										<option value="" selected>Choose...</option>
 										<option value="1-5 years">1-5 years</option>

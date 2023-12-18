@@ -28,7 +28,7 @@
 			<?php
 			include('user-header.php')
 			?>
-		<!-- nav-bar ends -->>
+		<!-- nav-bar ends -->
 			<body>
 				
 				<div class="d-flex" id="wrapper">
