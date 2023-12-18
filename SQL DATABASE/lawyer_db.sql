@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 13, 2023 at 03:26 PM
+-- Generation Time: Dec 18, 2023 at 10:14 PM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -55,16 +55,6 @@ CREATE TABLE `booking` (
   `lawyer_id` varchar(20) NOT NULL,
   `status` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
-
---
--- Dumping data for table `booking`
---
-
-INSERT INTO `booking` (`booking_id`, `date`, `description`, `client_id`, `lawyer_id`, `status`) VALUES
-(18, '2023-10-02', 'Thanks i will reach on time.', 'Client653bfb87d2f36', 'Lawyer653bfaeb0ba24', 'Accepted'),
-(19, '2023-09-01', 'Will meet you on sunday.', 'Client653bfb87d2f36', 'Lawyer653bfa85ea652', 'Accepted'),
-(20, '2024-05-09', 'Will meet you soon.', 'Client653d02654e94e', 'Lawyer653bfa85ea652', 'Pending'),
-(21, '2023-12-10', '100k Will be transfered to you on our first meetup.', 'Client653d02654e94e', 'Lawyer653cfe168b5eb', 'Accepted');
 
 -- --------------------------------------------------------
 
@@ -118,11 +108,12 @@ CREATE TABLE `lawyer` (
 --
 
 INSERT INTO `lawyer` (`ID`, `lawyer_id`, `contact_Number`, `university_College`, `degree`, `passing_year`, `full_address`, `city`, `zip_code`, `practise_Length`, `case_handle`, `speciality`, `image`) VALUES
-(1, 'Lawyer653bfa85ea652', '03433898700', 'IQRA', 'LLB', '2013', 'HOUSE#  KARACHI,PAKISTAN', 'Lahore', '75950', '11-15 years', 'Criminal matter,Civil matter,Writ Jurisdiction,Company law,Contract law,Commercial matter,Construction law,', 'IT Law', '20231027195933_Aliyan.jpg'),
-(2, 'Lawyer653bfaeb0ba24', '03433298700', 'Ziauddin', 'LLM', '2016', 'HOUSE#  AREA KARACHI,PAKISTAN', 'Karachi', '84844', 'Most Senior', 'Criminal matter,Civil matter,Writ Jurisdiction,Company law,Contract law,Commercial matter,Construction law,Information Technology,Family Law,Religious Matter,Investment Matter,Labour Law,Property Law,Taxation Matter,Others,', 'Criminal Law', '20231027200115_25786134576ce0344893b33a051160b1.jpg'),
-(3, 'Lawyer653cfe168b5eb', '03432838300', 'Zabist', 'LLB', '2000', 'D-55 block b Shahrah e Faisal', 'Islamabad', '24577', '1-5 years', 'Civil matter,Contract law,Construction law,Information Technology,Family Law,Investment Matter,Property Law,', 'Religious Law', '20231028142702_2.jpg'),
-(4, 'Lawyer653cfe756930c', '03349944400', 'IQRA', 'LLB', '2005', 'HOUSE# f-83 BLOCK 10  KARACHI,PAKISTAN', 'Karachi', '75933', '16-20 years', 'Criminal matter,Civil matter,Writ Jurisdiction,Company law,Contract law,Commercial matter,Construction law,Information Technology,Family Law,Religious Matter,Investment Matter,Labour Law,Property Law,Taxation Matter,Others,', 'Investment Law', '20231028142837_1.jpg'),
-(5, 'Lawyer653cfeda53bac', '03434484400', 'Ziauddin', 'LLM', '2014', 'HOUSE# u-1 BLOCK 1 MULTAN,PAKISTAN', ' ', '34343', 'Most Senior', 'Criminal matter,Civil matter,Writ Jurisdiction,Company law,Contract law,Commercial matter,Construction law,Information Technology,Family Law,Religious Matter,Investment Matter,Labour Law,Property Law,Taxation Matter,Others,', 'Family Law', '20231028143018_3.jpg');
+(7, 'Lawyer6580a5be73320', '03210994862', 'Iqra University', 'LLB', '2015', 'Flat', 'Karachi', '99990', '6-10 years', 'Civil matter,', 'Civil Law', '20231218210414_20231028142837_1.jpg'),
+(8, 'Lawyer6580b2048a31e', '09876543211', 'Zabist', 'LLM', '2016', 'House', 'Islamabad', '88888', '11-15 years', 'Writ Jurisdiction,', 'Writ Jurisdiction', '20231218215636_ad155b4cfd5b6d220c3e5b51b349a37a.jpg'),
+(9, 'Lawyer6580b28e302c9', '98765678901', 'School of Law- University of Karachi', 'LLB', '2010', 'House', 'Multan', '76767', '16-20 years', 'Company law,', 'Company Law', '20231218215854_1697050764010.jpg'),
+(10, 'Lawyer6580b31bad25f', '09876543123', 'Themis School of Law ', 'LLB', '2014', 'Flat', 'Karachi', '76767', 'Most Senior', 'Contract law,', 'Contract Law', '20231218220115_Aaron-Pearl-0941.jpg'),
+(11, 'Lawyer6580b3d1bc83c', '01237654829', 'Hamdard University', 'LLB', '2010', 'Flat', 'Karachi', '88766', 'Most Senior', 'Commercial matter,', 'Commercial Law', '20231218220417_Julia_Schuette.jpg'),
+(12, 'Lawyer6580b4670fdb7', '03215674890', ' Sindh Muslim Law College', 'LLB', '2000', 'House', 'Lahore', '66577', '1-5 years', 'Construction law,', 'Construction Law', '20231218220647_James-Perry.jpg');
 
 -- --------------------------------------------------------
 
@@ -147,13 +138,14 @@ CREATE TABLE `user` (
 INSERT INTO `user` (`u_id`, `first_Name`, `last_Name`, `email`, `password`, `status`, `role`) VALUES
 ('Admin', 'admin', 'admin', 'admin@gmail.com', 'admin', 'Active', 'Admin'),
 ('Client653bfb87d2f36', 'Hasan', 'Ali', 'hasanali@gmail.com ', 'hasanali', 'Active', 'User'),
-('Client653d02654e94e', 'Shahid', 'Jamil', 'shahid@gmail.com ', 'shahid ', 'Active', 'User'),
+('Client653d02654e94e', 'Shahid', 'Jamil', 'shahid@gmail.com ', 'shahid', 'Active', 'User'),
 ('Client653d02aa352b5', 'Fouz', 'Azeem', 'fouz@gmail.com ', 'fouz ', 'Active', 'User'),
-('Lawyer653bfa85ea652', 'Aln', 'Quhi', 'aliyan@gmail.com ', 'ali4ren ', 'Active', 'Lawyer'),
-('Lawyer653bfaeb0ba24', 'Mub', 'Qshi', 'aliya@gmail.com ', 'm899b ', 'Active', 'Lawyer'),
-('Lawyer653cfe168b5eb', 'Basit', 'Khan', 'basit@gmail.com ', 'basit ', 'Active', 'Lawyer'),
-('Lawyer653cfe756930c', 'Ahmed', 'Maklai', 'ahmed@gmail.com ', 'ahmed ', 'Active', 'Lawyer'),
-('Lawyer653cfeda53bac', 'Aqsa', 'Jamil', 'aqsa@gmail.com ', 'aqsa123', 'Active', 'Lawyer');
+('Lawyer6580a5be73320', 'Ahmed', 'Arain', 'ahmed@gmail.com ', 'ahmed ', 'Active', 'Lawyer'),
+('Lawyer6580b2048a31e', 'Shoaib', 'Begum', 'shoaibwazir@gmail.com ', 'shoaib ', 'Active', 'Lawyer'),
+('Lawyer6580b28e302c9', 'Muhammad ', 'Ali', 'muhammadali@gmail.com ', 'muhammadali ', 'Active', 'Lawyer'),
+('Lawyer6580b31bad25f', 'Mujtaba', 'Kahnani', 'mujtaba@gmail.com ', 'mujtaba ', 'Active', 'Lawyer'),
+('Lawyer6580b3d1bc83c', 'Urooj', 'Zahra', 'urooj@gmail.com ', 'urooj ', 'Active', 'Lawyer'),
+('Lawyer6580b4670fdb7', 'Hiba', 'Farhan', 'hiba@gmail.com ', 'hiba ', 'Active', 'Lawyer');
 
 --
 -- Indexes for dumped tables
@@ -208,7 +200,7 @@ ALTER TABLE `administrator`
 -- AUTO_INCREMENT for table `booking`
 --
 ALTER TABLE `booking`
-  MODIFY `booking_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
+  MODIFY `booking_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
 
 --
 -- AUTO_INCREMENT for table `client`
@@ -220,7 +212,7 @@ ALTER TABLE `client`
 -- AUTO_INCREMENT for table `lawyer`
 --
 ALTER TABLE `lawyer`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- Constraints for dumped tables
