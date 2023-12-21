@@ -137,13 +137,23 @@ footer h5{
     background-color: #af9473;
     border-color: #af9473;
 }
+.butcol{
+    color: #040000;
+    background-color: #af9473;
+    border-color: #af9473;
+}
+.butcol:hover{
+    color: #040000;
+}
 .butmain{
     color: #af9473;
     border-color: #af9473;
 }
 .butmain:hover{
-    color: #af9473 !important;
-}.btt1{
+    color: black !important;
+    background-color: #af9473 !important;
+}
+.btt1{
     padding-top: 1.5rem;
     padding-bottom: 1.2rem;
     background-color: #131214;

@@ -130,7 +130,7 @@
 												<div class="form-group row">
 													
 													<div class="col-sm-8" style="margin-left:40%">
-														<input type="submit" name="update" value="Update"  class="btn btn-success">
+														<input type="submit" name="update" value="Update"  class="btn butcol">
 													</div>
 												</div>
 											</form>

@@ -90,7 +90,7 @@
 									<input id="accept" name="agree" type="checkbox" value="y" /><strong>I Agree with terms & conditions </strong>
 								</div>
 							</div>
-							<input name="post" type="submit" class="btn btn-block btn-success" value="Register"/>
+							<input name="post" type="submit" class="btn btn-block butcol " value="Register"/>
 						</form>
 					</div>
 				</div>
@@ -108,7 +108,8 @@
 	<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 	<script src='http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js'></script>
 	<script src='http://cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.4.5/js/bootstrapvalidator.min.js'></script>
-		$('#validateForm').bootstrapValidator({
+	<script>
+	    $('#validateForm').bootstrapValidator({
 			feedbackIcons: {
 				valid: 'glyphicon glyphicon-ok',
 				validating: 'glyphicon glyphicon-refresh'
@@ -143,6 +144,13 @@
 							},
 							emailAddress: {
 								message: 'Please Enter a valid email address'
+							}
+						}
+					},
+					password: {
+						validators: {
+							notEmpty: {
+								message: 'Please Enter your Password'
 							}
 						}
 					},

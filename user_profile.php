@@ -102,7 +102,7 @@
 											<input type="text" class="form-control" name="zip_code" id="zip_code" value="<?php echo $row["zip_code"]; ?>">
 										</div>
 									</div>
-									<button type="submit" class="btn btn-info">Update</button>
+									<button type="submit" class="btn butcol">Update</button>
 									
 								</form>
 							</div>

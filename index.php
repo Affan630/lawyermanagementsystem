@@ -38,7 +38,7 @@ include('header.php')
 							<h1>Discover Your Ideal Lawyer Here!</h1>
 							<p>Your Legal Journey Starts Now</p>
 							<br>
-							<a href="lawyers.php" class="btn btn-outline-success">Find Lawyers</a>
+							<a href="lawyers.php" class="btn butcol">Find Lawyers</a>
 						</div>
 
 					</div>
@@ -79,7 +79,7 @@ include('header.php')
     </div>
   </div>
   <div class="card" style="background-color:#615f65;">
-    <img class="card-img-top" src="images/upload/20231028142837_1.jpg" alt="Card image cap">
+    <img class="card-img-top" src="images/upload/20231218210414_20231028142837_1.jpg" alt="Card image cap">
     <div class="card-body">
 	    <h4 class="card-title" style="font-weight:bold;">Basit Khan</h4>
          <h5 class="card-text">Investment Law</h5>

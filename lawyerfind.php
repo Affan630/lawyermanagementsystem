@@ -85,7 +85,7 @@
 				
 					<div class="container">
 					<br/>
-					<a href="findlawyer2.php"type="submit" class="btn btn-md btn-primary "><i class="fa fa-search"></i>&nbsp; Find Lawyer</a>
+					<a href="findlawyer2.php"type="submit" class="btn btn-md butcol"><i class="fa fa-search"></i>&nbsp; Find Lawyer</a>
 					<hr/>
 						<div class="row " >
 						
@@ -97,7 +97,7 @@
 								
 								while($row = mysqli_fetch_array($result)) {
 								?>
-								<div class="col-md-4">
+								<div class="col-md-4 c3">
 									<div class="card" style="width: 18rem;">
 										<img src="images/upload/<?php echo $row["image"]; ?>" class="card-img-top cusimg img-fluid" alt="img">
 										<div class="card-body">
@@ -105,7 +105,7 @@
 											<h6 class="card-title"><?php echo $row["speciality"]; ?></h6> <!--lawyers practice speciality dynamic-->
 											<h6 class="card-title"><span><?php echo $row["practise_Length"]; ?></span></h6> <!--lawyers practice time dynamic-->
 											
-											<a class="btn btn-sm btn-info" href="lawyerfind1.php?u_id=<?php echo $row["u_id"]; ?>"><i class="fa fa-street-view"></i>&nbsp; View Full Profile</a>
+											<a class="btn btn-sm butcol" href="lawyerfind1.php?u_id=<?php echo $row["u_id"]; ?>"><i class="fa fa-street-view"></i>&nbsp; View Full Profile</a>
 
 										</div>
 									</div>

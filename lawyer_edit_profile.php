@@ -189,7 +189,7 @@
 														<div class="form-group">
 															
 														</div>
-														<input name="update" type="submit" class="btn btn-block btn-info" value="Update" />
+														<input name="update" type="submit" class="btn btn-block butcol" value="Update" />
 														<!--after signup redirect lawyer dashboard page-->
 													</form>
 													

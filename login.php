@@ -66,7 +66,7 @@
 								<input type="password" class="form-control" name="passord" id="passord" placeholder="Enter your  Valid Password">
 							</div>
 
-							<input name="login" type="submit" class="btn btn-block btn-success" value="Login" />
+							<input name="login" type="submit" class="btn btn-block butcol" value="Login" />
 							<!--after signup redirect user dashboard page-->
 						</form>
 					</div>

@@ -28,7 +28,7 @@
 					<br/>
 					<div class="d-grid" hh4><a href="searchLawyer.php"type="submit" class="btn btn-md btn-block butmain"><i class="fa fa-search"></i>&nbsp; Find Lawyer</a></div>
 					<hr/>
-						<div class="row " >
+						<div class="row">
 						
 							<?php
        include_once "db_con/dbCon.php";

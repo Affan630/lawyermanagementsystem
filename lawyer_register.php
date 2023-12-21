@@ -260,7 +260,7 @@
 									<input id="accept" name="agree" type="checkbox" value="y" /><strong>I Agree with terms & conditions </strong>
 								</div>
 							</div>
-							<input name="post" type="submit" class="btn btn-block btn-success" value="Register" />
+							<input name="post" type="submit" class="btn btn-block butcol" value="Register" />
 							<!--after signup redirect lawyer dashboard page-->
 						</form>
 					</div>
@@ -320,6 +320,13 @@
 							},
 							emailAddress: {
 								message: 'Please Enter a valid email address'
+							}
+						}
+					},
+					password: {
+						validators: {
+							notEmpty: {
+								message: 'Please Enter your Password'
 							}
 						}
 					},

@@ -22,10 +22,8 @@
 		<body>
 			<section class="lawyerscard">
 				<div class="container">
-					<form method="post" novalidate="novalidate" >
-						
-						<div class="row" style="color:#af9473">
-							
+					<form method="post" novalidate="novalidate">						
+						<div class="row" style="color:#af9473">							
 							<div class="col-md-4">
 								<div class="form-group">
 									<label for="experience">Experience</label>
@@ -65,7 +63,7 @@
 							<div class="col-md-4">
 								<label for="location">Location</label>
 								<select name="location" class="form-control"> 
-									<option selected>Choose...</option>
+									<option value="" selected>Choose...</option>
 									<option value="Karachi">Karachi</option>
 										<option value="Lahore">Lahore</option>
 										<option value="Islamabad">Islamabad</option>
@@ -76,31 +74,82 @@
 						<div class="row">
 							<div class="col-md-8"></div>
 							<div class="col-md-4">
-								<button id="button" type="submit" class="btn btn-mg btn-primary" name="submit" value="submit" style="float:right"><i class="fa fa-search"></i>&nbsp; Search Information</button>
+								<button id="button" type="submit" class="btn btn-mg butcol" name="submit" value="submit" style="float:right"><i class="fa fa-search"></i>&nbsp; Search Information</button>
 							</div>	
 						</div>
 					</form>
 					<hr/>
-					<div class="row " >
+					<div class="row gap-1" >
 						
 						<?php
 							include_once 'db_con/dbCon.php';
 							$conn = connect();
-							if (isset($_POST['submit'])){
+							if (isset($_POST['submit'])) {
 								$experience=$_POST['experience'];
 								$speciality=$_POST['speciality'];
-								$location=$_POST['location'];
+								$location=$_POST['location'];					
+
+								$sql = null;
+								if(!empty($experience) && !empty($speciality) && !empty($location)) {
+									$sql = "SELECT * FROM `lawyer` 
+									LEFT JOIN `user` ON `lawyer`.`lawyer_id` = `user`.`u_id`
+									WHERE user.status='Active' 
+									AND practise_Length='$experience'
+									AND speciality='$speciality'
+									AND city='$location'";									
+								}
+								if(empty($experience)) {
+									$sql = "SELECT * FROM `lawyer` 
+									LEFT JOIN `user` ON `lawyer`.`lawyer_id` = `user`.`u_id`
+									WHERE user.status='Active' 									
+									AND speciality='$speciality'
+									AND city='$location'";
+								}
+								if(empty($location)) {
+									$sql = "SELECT * FROM `lawyer` 
+									LEFT JOIN `user` ON `lawyer`.`lawyer_id` = `user`.`u_id`
+									WHERE user.status='Active' 									
+									AND speciality='$speciality'
+									AND practise_Length='$experience'";
+								}
+								if(empty($speciality)) {
+									$sql = "SELECT * FROM `lawyer` 
+									LEFT JOIN `user` ON `lawyer`.`lawyer_id` = `user`.`u_id`
+									WHERE user.status='Active' 									
+									AND practise_Length='$experience'
+									AND city='$location'";
+								}
+								if(empty($experience) && empty($speciality)) {
+									$sql = "SELECT * FROM `lawyer` 
+									LEFT JOIN `user` ON `lawyer`.`lawyer_id` = `user`.`u_id`
+									WHERE user.status='Active'
+									AND city='$location'";
+								}
+								if(empty($experience) && empty($location)) {
+									$sql = "SELECT * FROM `lawyer` 
+									LEFT JOIN `user` ON `lawyer`.`lawyer_id` = `user`.`u_id`
+									WHERE user.status='Active'
+									AND speciality='$speciality'";
+								}
+								if(empty($speciality) && empty($location)) {
+									$sql = "SELECT * FROM `lawyer` 
+									LEFT JOIN `user` ON `lawyer`.`lawyer_id` = `user`.`u_id`
+									WHERE user.status='Active'
+									AND practise_Length='$experience'";
+								}
+								if(empty($experience) && empty($speciality) && empty($location)) {
+									$sql = "SELECT * FROM `lawyer` 
+									LEFT JOIN `user` ON `lawyer`.`lawyer_id` = `user`.`u_id`
+									WHERE user.status='Active'";
+								}
+
 								
-								$result = mysqli_query($conn,"SELECT * FROM user,lawyer WHERE user.u_id=lawyer.lawyer_id 
-								AND user.status='Active'
-								OR practise_Length='$experience'
-								OR speciality='$speciality'
-								OR city='$location'");
+								$result = mysqli_query($conn,$sql);
 								
 								while($row = mysqli_fetch_array($result)) {
 									
 								?>
-								<div class="col-md-4">
+								<div class="col-md-4 c3">
 									<div class="card" style="width: 18rem;">
 										<img src="images/upload/<?php echo $row["image"]; ?>" class="card-img-top cusimg img-fluid" alt="img">
 										<div class="card-body">
@@ -108,7 +157,7 @@
 											<h6 class="card-title"><?php echo $row["speciality"]; ?></h6> <!--lawyers practice speciality dynamic-->
 											<h6 class="card-title"><span><?php echo $row["practise_Length"]; ?></span></h6> <!--lawyers practice time dynamic-->
 											
-											<a class="btn btn-sm btn-info" href="single_lawyer.php?u_id=<?php echo $row["u_id"]; ?>"><i class="fa fa-street-view"></i>&nbsp; View Full Profile</a>
+											<a class="btn btn-sm butcol" href="single_lawyer.php?u_id=<?php echo $row["u_id"]; ?>"><i class="fa fa-street-view"></i>&nbsp; View Full Profile</a>
 										</div>
 									</div>
 								</div>
