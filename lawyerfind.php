@@ -85,7 +85,7 @@
 				
 					<div class="container">
 					<br/>
-					<a href="findlawyer2.php"type="submit" class="btn btn-md butcol"><i class="fa fa-search"></i>&nbsp; Find Lawyer</a>
+					<div class="d-grid" hh4><a href="findlawyer2.php"type="submit" class="btn btn-md btn-block butmain"><i class="fa fa-search"></i>&nbsp; Find Lawyer</a></div>
 					<hr/>
 						<div class="row " >
 						

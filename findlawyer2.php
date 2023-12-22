@@ -185,7 +185,7 @@
 								?>
 						<div class="col-md-4 c3">
 							<div class="card" style="width: 18rem;">
-								<img src="images/upload/<?php echo $row[" image"]; ?>" class="card-img-top cusimg
+								<img src="images/upload/<?php echo $row["image"]; ?>" class="card-img-top cusimg
 								img-fluid" alt="img">
 								<div class="card-body">
 									<h5 class="card-title">
@@ -199,7 +199,7 @@
 											<?php echo $row["practise_Length"]; ?>
 										</span></h6> <!--lawyers practice time dynamic-->
 
-									<a class="btn btn-sm butcol" href="single_lawyer.php?u_id=<?php echo $row[" u_id"];
+									<a class="btn btn-sm butcol" href="single_lawyer.php?u_id=<?php echo $row["u_id"];
 										?>"><i class="fa fa-street-view"></i>&nbsp; View Full Profile</a>
 							</div>
 						</div>
