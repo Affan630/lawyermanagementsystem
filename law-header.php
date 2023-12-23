@@ -15,7 +15,7 @@
 <nav class="navbar navbar-dark bg-success">
 			<a class="navbar-brand" href="#">
 				<img src="images/logo.png"
-					width="70" height="70" alt="logo">
+					width="100" height="100" alt="logo">
 				Law Frim
 			</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-list"

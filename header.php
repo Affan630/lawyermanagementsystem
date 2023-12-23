@@ -14,9 +14,7 @@
 </style>
 <nav class="navbar navbar-dark bg-success">
 			<a class="navbar-brand" href="index.php">
-				<img src="images/logo.png"
-					width="70" height="70" alt="logo">
-				Law Frim
+				<img src="images/logo.png" width="100" height="100" alt="logo">
 			</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-list"
 				aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
